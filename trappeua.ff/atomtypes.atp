@@ -1,3 +1,5 @@
+  ;;;;;;;; atomtypes from wesbarnett git template
+  ;
   CH4       16.04300 ; Methane
   O         15.99940 ; Oxygen
   H          1.00800 ; Hydrogen (only attaches to an oxygen)
@@ -9,3 +11,23 @@
   CH_C      13.01900 ; CH attached to any carbon group
   C_O       12.01100 ; Single carbon attached to an oxygen
   C_C       12.01100 ; Single carbon attached to any carbon group
+;
+;;;;;;;;;; atomtypes for Ethers, Glycols, Ketones, and Aldehydes see doi:10.1021/jp049459w
+; 
+ OA        15.99940 ; Oxygen alcohol 
+ OE        15.99940 ; Oxygen ether
+ OK        15.99940 ; Oxygen ketone
+ OY        15.99940 ; Oxygen aldehyde
+;
+CH3_EAY    15.03500 ; ether/alcohol/aldehyde
+CH2_EAY    14.02700 ; ether/alcohol/aldehyde
+CH2        15.03500 ; all other 
+CH3        14.02700 ; all other
+;
+CH_EA      13.01900 ; SP3 ether/alcohol
+CH_Y       13.01900 ; SP2 aldehyde
+CH         13.01900 ; SP3 all other incl. aldehyde 
+;
+C_EA       12.01100 ; SP ether/alcohol
+C_K        12.01100 ; SP ketone
+C          12.01100 ; SP all other/aldehyde
