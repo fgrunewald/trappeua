@@ -29,7 +29,30 @@
   MW                      0.00000   0.000    D       0.00000e+00  0.00000e+00
   OW                     15.99940   0.000    A       3.15890e-01  7.74908e-01
   HW                      1.00800   0.000    A       0.00000e+00  0.00000e+00
-
+;
+; Ethers/Aldehydes/Ketones etc. according to Stubbs, J. M., Potoff, J. J., & Siepmann, J. I. (2004). 
+; Transferable potentials for phase equilibria. 6. United-atom description for ethers,
+; glycols, ketones, and aldehydes. The Journal of Physical Chemistry B, 108(45), 17596-17605.
+;
+; name      at.num    mass       charge   ptype      sigma      epsilon
+ OA           8     15.99940     0.000       A    3.20000e-01  7.73245e-01 ; Oxygen alcohol 
+ OE           8     15.99940     0.000       A    2.80000e-01  4.57295e-01 ; Oxygen ether
+ OK           8     15.99940     0.000       A    3.05000e-01  6.56842e-01 ; Oxygen ketone
+ OY           8     15.99940     0.000       A    3.05000e-01  6.56842e-01 ; Oxygen aldehyde
+;
+CH3_EAY       6     15.03500     0.000       A    3.75000e-01  8.14817e-01 ; ether/alcohol/aldehyde
+CH2_EAY       6     14.02700     0.000       A    3.95000e-01  3.82465e-01 ; ether/alcohol/aldehyde
+CH2           6     15.03500     0.000       A    3.95000e-01  8.14817e-01 ; all other 
+CH3           6     14.02700     0.000       A    3.75000e-01  8.82465e-01 ; all other
+;
+CH_EA         6     13.01900     0.000       A    4.33000e-01  8.31446e-02 ; SP3 ether/alcohol
+CH_Y          6     13.01900     0.000       A    3.52000e-01  4.48981e-01 ; SP2 aldehyde
+CH            6     13.01900     0.000       A    4.68000e-01  8.31446e-02 ; SP3 all other incl. aldehyde 
+;
+C_EA          6     12.01100     0.000       A    4.15723e-03 ; SP ether/alcohol
+C_K           6     12.01100     0.000       A    3.32578e-01 ; SP ketone
+C             6     12.01100     0.000       A    4.15723e-03 ; SP all other/aldehyde
+;
 #ifdef WITH_HHALK_MODS
 ; HH-Alkane modifications for cross interactions between alkane carbons and water
 ; oxygens. Include this *after* any [atomtypes] directive. Otherwise it will be
