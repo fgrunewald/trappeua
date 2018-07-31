@@ -13,6 +13,9 @@
 ; B. Chen, J.J. Potoff, and J.I.  Siepmann, J. Phys. Chem. B 105, 3093 (2001).
 ; http://dx.doi.org/10.1021/jp003882x
 
+; J. M. Stubbs, J. J. Potoff, and J. I. Siepmann, J. Phys. Chem. B 108, 17596-17605 (2004)
+; http://dx.doi.org/10.1021/jp049459w
+
 ; H.S. Ashbaugh, L. Liu, and L.N. Surampudi. J.Chem. Phys. 135, 054510 (2011).
 ; http://dx.doi.org/10.1063/1.3623267
 
@@ -29,8 +32,7 @@
 ;   interactions, so there are no [ pairtypes ] sections.
 
 [ defaults ]
-; nbfunc    comb-rule   gen-pairs
-  1         2           no       
-
+; nbfunc        comb-rule       gen-pairs      
+  1                2                no         
 #include "ffnonbonded.itp"
 #include "ffbonded.itp"
